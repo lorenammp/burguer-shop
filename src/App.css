@@ -1,0 +1,89 @@
+.main-container {
+  display: flex;
+  width: 80vw;
+  max-width: 1370px;
+  margin: 30px auto;
+  justify-content: space-between;
+}
+
+.product-list {
+  width: 72%;
+}
+
+.cart {
+  width: 26%;
+}
+
+/* CUSTOM SCROLLBAR */
+::-webkit-scrollbar {
+  width: 14px;
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  box-shadow: inset 0 0 14px 14px #ff4757;
+  border: solid 4px transparent;
+  border-radius: 14px;
+}
+
+::-webkit-scrollbar-button {
+  display: none;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  box-shadow: inset 0 0 14px 14px #ffa502;
+}
+
+::-webkit-scrollbar-track {
+  display: none;
+}
+
+@media screen and (max-width: 1170px) {
+  .product-list {
+    width: 60%;
+  }
+
+  .cart {
+    width: 34%;
+    right: 14.5%;
+  }
+}
+
+@media screen and (max-width: 999px) {
+  .main-container {
+    width: 90vw;
+  }
+
+  .product-list {
+    width: 60%;
+  }
+
+  .cart {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 830px) {
+  .main-container {
+    width: 90vw;
+    flex-wrap: wrap;
+  }
+
+  .product-list {
+    width: 102%;
+    margin-bottom: 20px;
+  }
+
+  .cart {
+    width: 100%;
+    position: relative;
+    right: 0;
+  }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1400px) {
+  .main-container {
+    width: 85vw;
+    flex-wrap: wrap;
+  }
+}

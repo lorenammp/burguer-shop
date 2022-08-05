@@ -1,0 +1,106 @@
+.card {
+  font-family: "Inter", sans-serif;
+
+  min-width: 300px;
+  min-height: 346px;
+  box-sizing: border-box;
+  margin-bottom: 40px;
+
+  border-radius: 4px;
+  border: 1px solid #f8f8f8;
+
+  transition: all 0.3s linear;
+  box-shadow: rgba(50, 50, 93, 0.2) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.2) 0px 8px 6px -8px;
+}
+
+.card:hover {
+  border-color: #ff4757;
+  box-shadow: rgba(50, 50, 93, 0.4) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.4) 0px 8px 6px -8px;
+}
+
+.card-img {
+  background: radial-gradient(#ffffff, #f8f8f8);
+  height: 150px;
+  text-align: center;
+
+  cursor: pointer;
+
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+.product-img {
+  height: 150px;
+  object-fit: contain;
+
+  transition: all 0.3s linear;
+}
+
+.product-img:hover {
+  transform: scale(1.2);
+}
+
+.card-text {
+  margin-top: 10px;
+  box-sizing: border-box;
+  padding: 16px;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+
+  color: #d63031;
+}
+
+.card-category {
+  color: #828282;
+
+  font-size: 12px;
+
+  margin: 10px 0;
+}
+
+.card-price {
+  font-size: 14px;
+  font-weight: 600;
+  color: #ffa502;
+  margin: 14px 0;
+}
+
+.add-to-cart-btn:hover {
+  box-shadow: inset 9.3em 0 0 0 #ffa502;
+}
+
+.add-to-cart-btn {
+  background: none;
+  border: none;
+  width: 120px;
+
+  line-height: 1;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+
+  color: #ffffff;
+  background-color: #ff4757;
+  transition: 0.25s;
+
+  padding: 12px 13px;
+}
+
+@media screen and (min-width: 1470px) and (max-width: 1599px) {
+  .card {
+    min-width: 280px;
+  }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1469px) {
+  .card {
+    min-width: 250px;
+  }
+}
